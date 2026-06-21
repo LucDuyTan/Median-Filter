@@ -83,11 +83,11 @@ pip install pillow opencv-python scikit-image numpy
 
 ### 🔹 2. Convert image → HEX
 
-* Chỉnh đường dẫn trong `ConvertImage.py`
+* Chỉnh đường dẫn trong `ImagetoHex.py`
 * Chạy:
 
 ```bash
-python ConvertImage.py
+python ImageToHex.py
 ```
 
 ---
@@ -114,7 +114,7 @@ python ConvertImage.py
 ### 🔹 4. Convert HEX → Image
 
 ```bash
-python ConvertHex.py
+python HexToImage.py
 ```
 
 ---
@@ -122,12 +122,12 @@ python ConvertHex.py
 ### 🔹 5. Evaluate quality
 
 ```bash
-python SoSanhAnh.py
+python QualityofImage.py
 ```
 
 ---
 
-## ⚠️ Important Notes
+## ⚠️ Notes
 
 * 📏 **Kích thước ảnh phải đồng bộ** giữa:
 
@@ -135,24 +135,24 @@ python SoSanhAnh.py
   * Python (`W`, `H`)
 
 * 📂 **Đường dẫn file**:
-
-  * Hiện dùng path tuyệt đối
-  * Cần chỉnh lại phù hợp máy của bạn
+  * Hiện dùng path tuyệt đối cần chỉnh lại phù hợp
 
 ---
 
-## 💡 Future Improvements
+## Kết quả đạt được
+* Ảnh gốc
 
-* Pipeline hóa toàn bộ filter
-* Tối ưu latency & throughput
-* Hỗ trợ ảnh RGB
-* Triển khai trên FPGA thực tế
+<img width="430" height="554" alt="baitap1_anhgoc" src="https://github.com/user-attachments/assets/32003908-a8d5-4238-bd0c-5e2913316061" />
 
----
+* Ảnh nhiễu
 
-## 👨‍💻 Author
+<img width="430" height="554" alt="baitap1_nhieu" src="https://github.com/user-attachments/assets/7f32675d-e690-44a7-bde7-869523f4eec1" />
 
-* Median Filter RTL Project
-* Verilog + Image Processing
+* Ảnh sau khi lọc nhiễu
 
----
+<img width="430" height="554" alt="output_image" src="https://github.com/user-attachments/assets/d9ba87fb-22db-4bd6-9731-01042782b0b3" />
+
+* Chất lượng ảnh sau khi lọc
+* 1. PSNR : 34.39 dB
+* 2. SSIM : 0.9575
+
